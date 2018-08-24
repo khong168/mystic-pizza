@@ -61,9 +61,7 @@ PizzaOrder.prototype.pizzaTotal = function() {
         var newPizzaOrder = new PizzaOrder(inputtedFirstName, inputtedLastName, inputtedDelivery, inputtedSize, inputtedToppings, inputtedVeggies);
         console.log(newPizzaOrder);
         var pizzaDisplay = newPizzaOrder.pizzaTotal();
-
-        // order summary inputUser
-        $("#pizzaTotal").append(newPizzaOrder.price)
+        
         console.log(pizzaDisplay);
         $(".results").text(pizzaDisplay);
         $("form#new-contact")[0].reset();
