@@ -2,16 +2,54 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Pizza</title>
 </head>
+
 <body>
   <div class="container">
-  
-  </div>
-</body>
-</html>
+    <div class="jumbotron">
+      <h1>Mystic Pizza</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Pizza Size</h3>
+        <form id="pizzaSize">
+          <div class="form-row">
+            <div class="col-4">
+              <select id="pizzaSize" class="form-control">
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+              </select>
+            </div>
+          </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Topping</h3>
+        <label>Toppings ($1ea.)</label>
+        <div class="checkbox">
+          <label><input class="toppings" id=pepperoni type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+        </div>
+        <div class="checkbox">
+          <label><input class="toppings" id=cheese type="checkbox" name="toppings" value="cheese">Cheese</label>
+        </div>
+        <div class="checkbox disabled">
+        <label><input class="toppings" id=tomatoes type="checkbox" name="toppings" value="tomatoes">Tomatoes</label>
+        </div>
+      </div>
+    </div>
+
+        <br>
+        <button id="orderSubmit" <button type="submit" class="btn btn-outline-primary">Order</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  </html>
