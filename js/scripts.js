@@ -1,5 +1,12 @@
+// function PizzaOrder(firstName, lastName, size, toppings, veggies) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// return this.firstName + ", " + this.lastName + ", " + this.size + ", " + this.toppings + ", " + this.veggies + ", $" + this.price;
 // Back End
-function PizzaOrder(size, toppings, veggies) {
+function PizzaOrder(firstName, lastName, delivery, size, toppings, veggies) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.delivery = delivery;
   this.size = size;
   this.toppings = toppings;
   this.veggies = veggies;
@@ -35,12 +42,14 @@ PizzaOrder.prototype.pizzaTotal = function() {
     }
 
 
-      return this.size + ", " + this.toppings + ", " + this.veggies + ", $" + this.price;
+      return this.firstName + ", " + this.lastName + ", " + this.delivery + ", " + this.size + ", " + this.toppings + ", " + this.veggies + ", $" + this.price;
     };
     // Front End
     $(document).ready(function() {
       $("form#size").submit(function(event) {
         event.preventDefault();
+        var inputtedFirstName = $("input#new-first-name").val();
+        var inputtedLastName = $("input#new-last-name").val();
         var inputtedDelivery = $('input[name=delivery]:checked').val();
         console.log(inputtedDelivery);
         var inputtedSize = $("#pizzaSize").val();
@@ -55,11 +64,12 @@ PizzaOrder.prototype.pizzaTotal = function() {
           inputtedVeggies.push($(this).val());
           console.log(inputtedVeggies);
         });
-        var newPizzaOrder = new PizzaOrder(inputtedSize, inputtedToppings, inputtedVeggies);
+        var newPizzaOrder = new PizzaOrder(inputtedFirstName, inputtedLastName, inputtedDelivery, inputtedSize, inputtedToppings, inputtedVeggies);
         console.log(newPizzaOrder);
         var pizzaDisplay = newPizzaOrder.pizzaTotal();
         console.log(pizzaDisplay);
         $(".results").text(pizzaDisplay);
+        $("form#new-contact")[0].reset();
 
 
 
