@@ -1,0 +1,25 @@
+#pizzaCoke {
+  display: block;
+  width: 75%;
+  float: right;
+}
+
+#mystic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.results {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.pretty {
+  margin: 10px 10px 10px 10px;
+}
+
+body {
+  background: linear-gradient(white, #ffc6f4);
+}
