@@ -7,6 +7,9 @@ function PizzaOrder(size, toppings, veggies) {
 }
 
 PizzaOrder.prototype.pizzaTotal = function() {
+    if (this.delivery === "delivery") {
+      this.price = this.price + 4;
+    }
     if (this.size === "small") {
       this.price = this.price + 2;
     }
@@ -38,6 +41,8 @@ PizzaOrder.prototype.pizzaTotal = function() {
     $(document).ready(function() {
       $("form#size").submit(function(event) {
         event.preventDefault();
+        var inputtedDelivery = $('input[name=delivery]:checked').val();
+        console.log(inputtedDelivery);
         var inputtedSize = $("#pizzaSize").val();
         console.log(inputtedSize);
         var inputtedToppings = [];

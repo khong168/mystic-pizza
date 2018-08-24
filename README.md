@@ -14,16 +14,28 @@ Create a prototype method for the cost of a pizza depending on the selections ch
 
 ## Specifications
 
-* _Show and select pizza sizes_
+* _Show pizza sizes_
 * _Input S,M,L | Output: S,M,L_
-* _Displays pizza size_
+* _Select pizza size_
 * _Input: S | Output: S_
-* _Gives options for toppings_
+* _Show toppings_
+* _Input: pepperoni, anchoives | Output: pepperoni, anchoives_
+* _Select toppings_
 * _Input: pepperoni | Output: pepperoni_
+* _Input: pepperoni, anchoives | Output: pepperoni, anchoives_
+* _Take input on submit_
+* _Input: small, pepperoni | Output: small, pepperoni_
+* _Display user input_
+* _Input: small, pepperoni | Output: small, pepperoni_
+* _Compute price_
+* _Input: small, pepperoni | Output: small, pepperoni, $12_
+* _Display price_
+* _Input: small, pepperoni | Output: small, pepperoni, $12_
+
 
 ## Setup/Installation Requirements
 
-* _Clone application at XXXXX to desktop_
+* _Clone application at https://github.com/khong168/mystic-pizza.git to desktop_
 * _Open index.html in Chrome browser_
 * _Order pizza_
 * _Click Submit_
