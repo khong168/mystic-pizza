@@ -2,7 +2,7 @@
 <html>
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   <script src="js/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -10,127 +10,110 @@
   <title>Mystic Pizza</title>
 </head>
 <body>
+  <img id="mystic" src="img/mystic.png" alt="mystic pizza logo">
   <div class="container">
-    <div class="row">
+    <div class="movie">
       <div class="col-md-12">
-        <img id="mystic" src="img/Mystic.png" alt="mystic pizza logo">
+        <img id="movie" src="img/movie.jpg" alt="movie poster">
+        <article><p>Three teenagers learn a lot about life and love one summer in this romantic comedy-drama. Kat (Annabeth Gish), Daisy (Julia Roberts), and Jojo (Lili Taylor) are three working-class women just out of high school who have jobs at the same pizza parlor in the resort community of Mystic, Connecticut. Kat wants to study astronomy at Yale; when she starts baby-sitting for Tim (William R. Moses), a wealthy Yale graduate summering in Mystic, she finds herself falling in love with him, <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content">even though he's married and nearly twice her age. Daisy, who isn't sure what she wants from life, starts going with Charlie (Adam Storke), a recent law school dropout, though she starts to think that it may be more to rebel against her family than out of genuine affection. And Jojo is attracted to Bill (Vincent D'Onofrio), but she doesn't want to get married (she's already left him at the altar once); when Bill announces that he's no longer willing to have sex without marriage, she has to decide if his affections are worth a lifetime commitment. Conchata Ferrell appears in a supporting role as Leona, the proprietor of the pizza parlor, who zealously guards the secret formula of her sauce.
+          <a class="read-more-hide hide" href="#">Read Less</a></span></p>
+        </article>
       </div>
     </div>
     <div class="pretty">
-      <div class="row">
-        <div class="col-md-6">
-          <form id="pizza">
-            <h4>Customer Name:</h4>
-            <div class="form-group">
-              <label for="new-first-name">First name</label>
-              <input type="text" class="form-control" id="new-first-name">
-            </div>
-            <div class="form-group">
-              <label for="new-last-name">Last name</label>
-              <input type="text" class="form-control" id="new-last-name">
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-md-12">
-                <h4>Pick Up or Delivery</h4>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="delivery" id="delivery1" value="pickup" checked>
-                  <label class="form-check-label" for="delivery1">Pick Up - No charge</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="delivery" id="delivery2" value="delivery">
-                  <label class="form-check-label" for="delivery2">Delivery - $4</label>
-                </div>
-                <br>
-                <h4>Select Your Size</h4>
-                <div class="form-row">
-                  <div class="col-6">
-                    <select id="pizzaSize" class="form-control">
-                    <option value="small">small</option>
-                    <option value="medium">medium</option>
-                    <option value="large">large</option>
-                    </select>
-                  </div>
-                </div>
-                <br>
-                <div class="row">
-                  <div class="col-md-6">
-                    <h4>Topping</h4>
-                    <label>$2 Each</label>
-                    <div class="checkbox">
-                      <label><input class="toppings" id=pepperoni type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="toppings" id=cheese type="checkbox" name="toppings" value="cheese">Extra Cheese</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="toppings" id=sausage type="checkbox" name="toppings" value="sausage">Sausage</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="toppings" id=anchoives type="checkbox" name="toppings" value="anchoives">Anchoives</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="toppings" id=bacon type="checkbox" name="toppings" value="bacon">Bacon</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Veggies</h4>
-                    <label>$1 Each</label>
-                    <div class="checkbox">
-                      <label><input class="veggies" id=tomatoes type="checkbox" name="veggies" value="tomatoes">Tomatoes</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="veggies" id=peppers type="checkbox" name="veggies" value="peppers">Peppers</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="veggies" id=pineapple type="checkbox" name="toppings" value="pineapple">Pineapple</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="veggies" id=artichoke type="checkbox" name="veggies" value="artichoke">Artichoke</label>
-                    </div>
-                    <div class="checkbox">
-                      <label><input class="veggies" id=arugala type="checkbox" name="toppings" value="arugala">Arugala</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <form id="pizza">
+        <h4>Customer Name:</h4>
+        <div class="form-group">
+          <label for="new-first-name">First name</label>
+          <input type="text" class="form-control" id="new-first-name">
         </div>
-        <div class="col-md-6">
-          <img id="movie" src="img/movie.jpg" alt="movie poster">
-          <article><p>Three teenagers learn a lot about life and love one summer in this romantic comedy-drama. Kat (Annabeth Gish), Daisy (Julia Roberts), and Jojo (Lili Taylor) are three working-class women just out of high school who have jobs at the same pizza parlor in the resort community of Mystic, Connecticut. Kat wants to study astronomy at Yale; when she starts baby-sitting for Tim (William R. Moses), a wealthy Yale graduate summering in Mystic, she finds herself falling in love with him, <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content">even though he's married and nearly twice her age. Daisy, who isn't sure what she wants from life, starts going with Charlie (Adam Storke), a recent law school dropout, though she starts to think that it may be more to rebel against her family than out of genuine affection. And Jojo is attracted to Bill (Vincent D'Onofrio), but she doesn't want to get married (she's already left him at the altar once); when Bill announces that he's no longer willing to have sex without marriage, she has to decide if his affections are worth a lifetime commitment. Conchata Ferrell appears in a supporting role as Leona, the proprietor of the pizza parlor, who zealously guards the secret formula of her sauce.
-          <a class="read-more-hide hide" href="#">Read Less</a></span></p>
-        </article>
+        <div class="form-group">
+          <label for="new-last-name">Last name</label>
+          <input type="text" class="form-control" id="new-last-name">
+        </div>
+        <br>
+        <h4>Pick Up or Delivery</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery" id="delivery1" value="pickup" checked>
+          <label class="form-check-label" for="delivery1">Pick Up - No charge</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="delivery" id="delivery2" value="delivery">
+          <label class="form-check-label" for="delivery2">Delivery - $4</label>
+        </div>
+        <br>
+        <h4>Select Your Size</h4>
+        <select id="pizzaSize" class="form-control">
+          <option value="small">small</option>
+          <option value="medium">medium</option>
+          <option value="large">large</option>
+        </select>
+        <br>
+        <div class="toppings">
+          <h4>Topping</h4>
+          <label>$2 Each</label>
+          <div class="checkbox">
+            <label><input class="toppings" id=pepperoni type="checkbox" name="toppings" value="pepperoni">Pepperoni</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="toppings" id=cheese type="checkbox" name="toppings" value="cheese">Extra Cheese</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="toppings" id=sausage type="checkbox" name="toppings" value="sausage">Sausage</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="toppings" id=anchoives type="checkbox" name="toppings" value="anchoives">Anchoives</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="toppings" id=bacon type="checkbox" name="toppings" value="bacon">Bacon</label>
+          </div>
+        </div>
+        <div class="veggies">
+          <h4>Veggies</h4>
+          <label>$1 Each</label>
+          <div class="checkbox">
+            <label><input class="veggies" id=tomatoes type="checkbox" name="veggies" value="tomatoes">Tomatoes</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="veggies" id=peppers type="checkbox" name="veggies" value="peppers">Peppers</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="veggies" id=pineapple type="checkbox" name="toppings" value="pineapple">Pineapple</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="veggies" id=artichoke type="checkbox" name="veggies" value="artichoke">Artichoke</label>
+          </div>
+          <div class="checkbox">
+            <label><input class="veggies" id=arugala type="checkbox" name="toppings" value="arugala">Arugala</label>
+          </div>
         </div>
         <button id="orderSubmit" <button type="submit" class="btn btn-outline-primary" data-toggle="modal" data-target="#orderModal">
           Place Your Order
         </button>
-      </div>
-      <br>
-
-      <!-- Modal -->
-      <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="orderModalLabel">Thank You For Your Order</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="results">
-                <div id="OrderDisplay">
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </form>
+    </div>
+  </div>
+  <br>
+  <!-- Modal -->
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orderModalLabel">Thank You For Your Order</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="results">
+            <div id="OrderDisplay">
             </div>
           </div>
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
-    </form>
     </div>
   </div>
 </body>

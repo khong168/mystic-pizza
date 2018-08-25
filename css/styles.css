@@ -16,8 +16,32 @@
   margin-top: 10px;
 }
 
-.pretty {
-  margin: 10px 10px 10px 10px;
+
+
+@media screen and (min-width: 768px) {
+  .pretty {
+    width: 50%;
+  }
+
+  .movie {
+    width: 50%;
+    float: right;
+  }
+
+  .toppings {
+    width: 33%;
+    display: inline-block;
+  }
+
+  .veggies {
+    width: 33%;
+    display: inline-block;
+  }
+}
+
+
+.btn {
+  display: block;
 }
 
 p {
