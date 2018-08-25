@@ -1,7 +1,7 @@
-#pizzaCoke {
+#movie {
   display: block;
-  width: 75%;
-  float: right;
+  width: 100%;
+  /* float: right; */
 }
 
 #mystic {
@@ -20,6 +20,14 @@
   margin: 10px 10px 10px 10px;
 }
 
+p {
+  font-size: 12px
+}
+
 body {
   background: linear-gradient(#ffc6f4, white);
+}
+
+.hide {
+  display: none;
 }

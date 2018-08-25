@@ -36,7 +36,7 @@ PizzaOrder.prototype.pizzaTotal = function() {
   }
   return this.firstName + " " + this.lastName + ". You have placed an order for " + this.delivery + ". You have chosen a " + this.size + " pizza with " + this.toppings + ", " + this.veggies + ". Your order total is $" + this.price + ". Thank you for your business.";
 };
-    
+
 // Front End
 $(document).ready(function() {
   $("form#pizza").submit(function(event) {
@@ -58,4 +58,21 @@ $(document).ready(function() {
     $(".results").text(pizzaDisplay);
     $("form#pizza")[0].reset();
   });
+  // Read More Read Less function found on CodePen https://codepen.io/JoshBlackwood/pen/pEwHe
+$('.read-more-content').addClass('hide');
+$('.read-more-show, .read-more-hide').removeClass('hide');
+
+// Set up the toggle effect:
+$('.read-more-show').on('click', function(e) {
+  $(this).next('.read-more-content').removeClass('hide');
+  $(this).addClass('hide');
+  e.preventDefault();
+
+$('.read-more-hide').on('click', function(e) {
+  var p = $(this).parent('.read-more-content');
+  p.addClass('hide');
+  p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
+  e.preventDefault();
+});
+});
 });

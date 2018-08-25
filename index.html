@@ -97,20 +97,40 @@
             </div>
         </div>
         <div class="col-md-6">
-          <img id="pizzaCoke" src="img/movie.jpg" alt="picture of pizza">
+          <img id="movie" src="img/movie.jpg" alt="movie poster">
+          <article><p>Three teenagers learn a lot about life and love one summer in this romantic comedy-drama. Kat (Annabeth Gish), Daisy (Julia Roberts), and Jojo (Lili Taylor) are three working-class women just out of high school who have jobs at the same pizza parlor in the resort community of Mystic, Connecticut. Kat wants to study astronomy at Yale; when she starts baby-sitting for Tim (William R. Moses), a wealthy Yale graduate summering in Mystic, she finds herself falling in love with him, <a class="read-more-show hide" href="#">Read More</a> <span class="read-more-content">even though he's married and nearly twice her age. Daisy, who isn't sure what she wants from life, starts going with Charlie (Adam Storke), a recent law school dropout, though she starts to think that it may be more to rebel against her family than out of genuine affection. And Jojo is attracted to Bill (Vincent D'Onofrio), but she doesn't want to get married (she's already left him at the altar once); when Bill announces that he's no longer willing to have sex without marriage, she has to decide if his affections are worth a lifetime commitment. Conchata Ferrell appears in a supporting role as Leona, the proprietor of the pizza parlor, who zealously guards the secret formula of her sauce.
+          <a class="read-more-hide hide" href="#">Read Less</a></span></p>
+        </article>
         </div>
+        <button id="orderSubmit" <button type="submit" class="btn btn-outline-primary" data-toggle="modal" data-target="#orderModal">
+          Place Your Order
+        </button>
       </div>
       <br>
-      <button id="orderSubmit" <button type="submit" class="btn btn-outline-primary">Order</button>
-      </form>
-    </div>
-    <div class="row">
-      <div class="col-md-8">
-        <div class="results">
-          <div id="OrderDisplay">
+
+      <!-- Modal -->
+      <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="orderModalLabel">Thank You For Your Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="results">
+                <div id="OrderDisplay">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
           </div>
         </div>
       </div>
+    </form>
     </div>
   </div>
 </body>
