@@ -1,7 +1,6 @@
 #movie {
   display: block;
   width: 100%;
-  /* float: right; */
 }
 
 #mystic {
@@ -15,8 +14,6 @@
   font-size: 20px;
   margin-top: 10px;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .pretty {
@@ -38,7 +35,6 @@
     display: inline-block;
   }
 }
-
 
 .btn {
   display: block;
